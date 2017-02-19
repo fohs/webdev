@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+//background-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: url("img/bg.png");
+  background-size: cover;
+  font-family: "Tahoma";
+}
+
+.heading {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 20px;
+  width: 350px;
+  float: right;
+  text-align: center;
+}
+
+.heading img, .footer img {
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 920px;
+}
+
+.form {
+  text-align: center;
+  width: 420px;
+}
+
+.form {
+  display: block;
+}
+
+.form:nth-child(2n + 1) {
+  float: right;
+}
+
+.form:nth-child(2n) {
+  float: left;
+}
+
+.form h1 {
+  margin: 20px;
+  color: white;
+  font-size: large;
+}
+
+.form:not(:nth-last-child(2)) h1::after {
+  content: " Form";
+}
+
+form {
+  background-color: #f4f4f4;
+  border: 18px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1%;
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+input, textarea{
+  padding: 10px 10px;
+  margin-top: 20px;
+  width: 340px;
+}
+
+.area {
+  padding-bottom: 100px;
+}
